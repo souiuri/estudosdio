@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamenttos - align content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+        
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .around{
+            align-content: space-around;
+        }
+
+        .betwend{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>sttretch</h1>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lorem ipsum dolor sit </div>
+        <div class="item">Lorem ipsum dolor sit a</div>
+        <div class="item">Lorem ipsum dolor st, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+    </div>
+    
+    <h1>ccenter</h1>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lorem ipsum dolor sit </div>
+        <div class="item">Lorem ipsum dolor sit a</div>
+        <div class="item">Lorem ipsum dolor st, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+    </div>
+
+    <h1></h1>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lorem ipsum dolor sit </div>
+        <div class="item">Lorem ipsum dolor sit a</div>
+        <div class="item">Lorem ipsum dolor st, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+    </div>
+
+    <h1>flex-end</h1>
+    <div class="container flex-end">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lorem ipsum dolor sit </div>
+        <div class="item">Lorem ipsum dolor sit a</div>
+        <div class="item">Lorem ipsum dolor st, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+    </div>
+
+    <h1>around</h1>
+    <div class="container arounds">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod </div>
+        <div class="item"> ger ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lorem ipsum dolor sit </div>
+        <div class="item">Lorem ipsum dolor sit a</div>
+        <div class="item">Lorem ipsr ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consectet, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consecteturd eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+    </div>
+
+    <h1>betwend</h1>
+    <div class="container betwend">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lorem ipsum dolor sit </div>
+        <div class="item">Lorem ipsum dolor sit a</div>
+        <div class="item">Lorem ipsum dolor st, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+        <div class="item">Lot consectetur adipiscing elit, euismod eros cursus donec tincidunt nascetur id erat, integer ullamcorper varius proin himenaeos montes</div>
+    </div>
+</body>
+</html>
